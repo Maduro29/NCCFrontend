@@ -1,0 +1,48 @@
+.navitem {
+    height: 44px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navitem-text {
+    color: #aaaaaa;
+    font-size: 16px;
+    font-weight: 700;
+    top: 14px;
+    left: 16px;
+    position: absolute;
+}
+
+.navitem-text > a {
+    text-decoration: none;
+    color: inherit
+}
+
+.navitem::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #5c5c5c
+}
+
+.navitem:hover {
+    background-color: #5c5c5c
+}
+
+.navitem.active {
+    background-color: #5c5c5c
+}
+
+.navitem.active .navitem-text {
+    color: white;
+}
+
+.navitem.home .navitem-text {
+    color: white
+}
+
+.navitem.active:hover {
+    cursor: default;
+}
