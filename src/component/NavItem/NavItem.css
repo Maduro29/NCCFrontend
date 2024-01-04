@@ -46,3 +46,34 @@
 .navitem.active:hover {
     cursor: default;
 }
+
+@media (max-width: 1025px) {
+    .navitem {
+        width: 100%;
+        height: 44px;
+    }
+
+    .more {
+        height: 44px;
+        position: relative;
+    }
+
+    .more:hover ~ .navbar-box {
+        display: block;
+        background-color: #191718;
+        height: 100%;
+    }
+
+    .navbar-box:hover {
+        display: block;
+    }
+
+    .more::after {
+        content: '';
+        width: 100%;
+        height: 10px;
+        position: absolute;
+        background-color: transparent;
+        bottom: -2px;
+    }
+}

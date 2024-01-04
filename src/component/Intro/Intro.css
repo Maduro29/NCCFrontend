@@ -1,5 +1,5 @@
 .intro {
-    height: 210px;
+    min-height: 210px;
     background-color: #efefef;
 }
 
@@ -12,6 +12,7 @@
     align-items: center;
     gap: 18px;
     flex-direction: column;
+    padding-bottom: 20px;
 }
 
 .intro-header {

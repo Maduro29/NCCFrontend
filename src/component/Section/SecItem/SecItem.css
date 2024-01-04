@@ -1,3 +1,11 @@
+.secitem {
+    width: calc((100% - 100px) / 3);
+    min-width: 350px;
+}
+
+.secitem-container {
+}
+
 .secitem-container img {
     width: 128px;
 }
@@ -17,4 +25,16 @@
     float: left;
     shape-outside: polygon(10px, 10px, 10px, 10px);
     margin-right: 10px;
+}
+
+@media (max-width: 1025px) {
+    .secitem {
+        width: 50%;
+    }
+  }
+
+@media (max-width: 1025px) {
+    .secitem {
+        width: 100%;
+    }
 }

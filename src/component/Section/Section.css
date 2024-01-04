@@ -1,4 +1,12 @@
 .section-container {
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+@media (max-width: 1025px) {
+    .App {
+      flex-direction: column;
+    }
+  }
